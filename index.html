@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Urban Grow (Page Under Construction)</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			body, html {
+				width: 100vw;
+				height: 100vh;
+				background-color: black;
+				margin: 0;
+				padding: 0;
+			}
+			#main {
+				position: absolute;
+				top: 47%;
+				left: 50%;
+				transform: translate(-50%, -40%) scale(0.9);
+				text-align: center;
+				align-items: center;
+				align-content: center;
+				color: white;
+				font-family: Arial, Helvetica, sans-serif;
+				opacity: 0;
+				transition: 1s all ease-out;
+			}
+		</style>
+		<script async defer>
+			let didPageLoad = false;
+			const pageLoaded = function() {
+				didPageLoad = true;
+				const element = document.querySelector('#main');
+				element.style.opacity = '1';
+				element.style.transform = 'translate(-50%, -50%) scale(1.0)';
+			};
+			window.onload = pageLoaded;
+			setTimeout(() => {
+				if (!didPageLoad) {
+					pageLoaded();
+				}
+			}, 1000);
+		</script>
+	</head>
+	<body>
+		<div id="main">
+			<h1>Urban Grow</h1>
+			<p>This page is under construction!</p>
+		</div>
+	</body>
+</html>
