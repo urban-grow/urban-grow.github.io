@@ -1,0 +1,4 @@
+head
+	meta(http-equiv="refresh" content="0; ./home")
+	script.
+		window.location.href += (window.location.href.endsWith('/') ? '' : '/') + 'home';

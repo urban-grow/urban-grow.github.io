@@ -1,0 +1,171 @@
+
+/* TITLE */
+
+#title {
+	width: 100%;
+	height: 90vh;
+	display: grid;
+	overflow: clip;
+
+	> * {
+		grid-area: 1 / 1;
+	}
+}
+#title-content {
+	color: white;
+	text-shadow: 0 6px 12px #0008;
+	z-index: 1;
+	box-sizing: border-box;
+	height: fit-content;
+	position: relative;
+	font-size: 0.4em;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+#title-content > h2 {
+	font-size: 4em;
+	line-height: 1.1em;
+	margin: 0;
+	text-align: center;
+	padding: 0;
+	filter: drop-shadow(2px 4px 6px #000a);
+}
+#title-content > img {
+	width: 100%;
+	filter: drop-shadow(2px 4px 6px #000d);
+}
+@media only screen and (max-width: 650px) {
+	#title-content > h2 {
+		font-size: 3em;
+	}
+}
+@media only screen and (max-width: 450px) {
+	#title-content > h2 {
+		font-size: 2.25em;
+	}
+}
+.title-bg-image {
+	width: 100vw;
+	height: 100%;
+	transform: scale(1.2);
+	filter: blur(4px) saturate(1.0);
+	-webkit-filter: blur(3px) saturate(1.0);
+
+	align-content: center;
+	background-color: #5c9e00;
+	background-image: url('../../assets/overhead_view_v3.jpg');
+	background-position: center;
+	background-repeat: repeat;
+	background-size: cover;
+}
+#title *::-moz-selection {
+	color: black;
+	background: white;
+	text-shadow: none;
+}
+#title *::selection {
+	color: black;
+	background: white;
+	text-shadow: none;
+}
+
+section *::-moz-selection {
+	color: white;
+	background: black;
+}
+section *::selection {
+	color: white;
+	background: black;
+}
+
+/* PROJECT */
+#project {
+	background-color: #f7f7f7;
+	color: #111;
+}
+
+#highlights {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+#highlights > div {
+	padding: 0 1em 0 1em;
+}
+
+@media only screen and (min-width: 650px) {
+	#highlights > div:nth-child(1), #highlights > div:nth-child(4) {
+		background-color: #eee;
+	}
+}
+@media only screen and (max-width: 649px) {
+	#highlights {
+		grid-template-columns: 1fr;
+	}
+	#highlights > div {
+		border-top: 1px solid #0002;
+	}
+}
+
+/* REGISTER */
+#register {
+	background-color: #025c8e;
+	background-image: url('../../assets/soil_image.jpg');
+	background-position: center;
+	background-repeat: repeat;
+	background-size: cover;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+}
+
+#register > div {
+	border-radius: 24px;
+	padding: 24px 24px 24px 24px;
+
+	background-color: #fff7;
+	border: 2px solid #fff2;
+	backdrop-filter: blur(10px) saturate(1.8);
+	-webkit-backdrop-filter: blur(10px) saturate(1.8);
+}
+
+/* TEAM */
+#team {
+	background-image: linear-gradient(180deg, rgb(201, 181, 156) 0%, 13.7011%, rgb(255, 206, 136) 27.4021%, 33.452%, rgb(255, 211, 47) 39.5018%, 41.8149%, rgb(255, 203, 12) 44.1281%, 46.0854%, rgb(239, 141, 0) 48.0427%, 50.8897%, rgb(86 44 0) 53.7367%, 57.8292%, rgb(165, 101, 26) 61.9217%, 66.726%, rgb(227, 157, 12) 71.5302%, 75.4448%, rgb(212, 153, 5) 79.3594%, 89.6797%, rgb(129, 82, 25) 100%);
+	background-image: url('../../assets/sunset.jpg');
+	background-position: center;
+	background-repeat: repeat;
+	background-size: cover;
+	position: relative;
+	height: 70vh;
+}
+
+.team-card {
+	border-radius: 16px;
+	padding: 8px 8px 20px 8px;
+
+	background-color: #fff7;
+	border: 2px solid #fff2;
+	backdrop-filter: blur(10px) saturate(1.8);
+	-webkit-backdrop-filter: blur(10px) saturate(1.8);
+	text-align: center;
+
+	width: 256px;
+	height: 390px;
+	position: absolute;
+
+	transform: translate(-50%, -50%) scale(0.5);
+	opacity: 0.5;
+	top: 50%;
+	left: 50%;
+}
+
+.team-card > div {
+	margin-top: 10px;
+}
+.team-card > div > p, .team-card > div > h1 {
+	margin: 0;
+}
+
+.team-card > img {
+	border-radius: 8px;
+	width: 100%;
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<script async defer src="./../common/common.js"></script>
+	<head>
+		<script async defer src="./script.js"></script>
+		<link rel="stylesheet" href="./../common/common.css"></link>
+		<title>Urban Grow</title>
+		<link rel="stylesheet" href="./styles.css"></link>
+		<link rel="prefetch" href="../register/" as="document"></link>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0"></meta>
+	</head>
+	<body>
+		<div @ class="navbar">
+			<a href="./../home">Inicio</a>
+			<a href="./../register">Registro</a>
+		</div>
+		<div @ class="lead-down">
+			<a>&#9660;</a>
+			<script>const listener = ()=>{
+			    if (document.body.scrollTop > 20) {
+			        document.querySelector('.lead-down').style.opacity = '0';
+			        document.body.removeEventListener('scroll', listener);
+			    }
+			};
+			document.body.addEventListener('scroll', listener);
+			</script>
+		</div>
+		<div id="title">
+			<div class="parallax title-bg-image"></div>
+			<section id="title-content">
+				<img src="../../assets/ColoredLogo.svg" id="hero-logo"></img>
+				<h2>No solo esperes un futuro seguro.<br>Cultívalo.</h2>
+			</section>
+		</div>
+		<section id="project">
+			<h1>¿Quiénes somos?</h1>
+			<p>
+				Urban Grow es un proyecto enfocado en promover la agricultura familiar.  Estamos comprometidos con fomentar la seguridad alimentaria en Puerto Rico por medio de la educación. Así exhortamos la comida fresca, segura y sostenible.
+			</p>
+			<div id="highlights">
+				<div>
+					<h3>Comida para Todos</h3>
+					<p>
+						Ayudamos a las familias a crear y cuidar huertos urbanos, sin importar la experiencia. 
+					</p>
+				</div>
+				<div>
+					<h3>Cultiva Seguridad</h3>
+					<p>Enseñamos a cultivar con seguridad, cuidando tu salud y suelo.</p>
+				</div>
+				<div>
+					<h3>Eco-Solución</h3>
+					<p>Promovemos prácticas sostenibles para reducir el impacto ambiental.</p>
+				</div>
+				<div>
+					<h3>Cultiva Comunidad</h3>
+					<p>
+						Más que huertos y jardines, construimos comunidad. ¡Comparte y crece con otros!
+					</p>
+				</div>
+			</div>
+		</section>
+		<section id="register" class="parallax">
+			<div>
+				<h1 style="margin-top: 0;">¿Listo para cosechar alegría, resiliencia y tus propios tomates?</h1>
+				<p>
+									Asegura tu lugar en nuestro próximo taller y recibe la guía de jardinería familiar que todo hogar puertorriqueño necesita.
+				</p>
+				<div role="button" @ text="¡Registrate!" onclick="gotoRegister()" class="button">
+					<p>¡Registrate!</p>
+				</div>
+			</div>
+		</section>
+		<section id="objectives">
+			<h1>¡Tu Huerto Comienza Aquí!</h1>
+			<p>
+							La resiliencia de Puerto Rico se cultiva en comunidad. ¿Listo para poner las manos en la tierra y ser parte del cambio?
+			
+			</p>
+		</section>
+		<section id="team" class="parallax">
+			<div @ name="Dr. Daniel A Bair" desc="Especialista en Suelos y Director del Proyecto" imgSrc="../../assets/people/bair.jpg" class="team-card">
+				<img src=../../assets/people/bair.jpg></img>
+				<div>
+					<h1>Dr. Daniel A Bair</h1>
+					<p>Especialista en Suelos y Director del Proyecto</p>
+				</div>
+			</div>
+			<div @ name="Jafet Santos Maldonado" desc="Comunicador Científico e Ilustrador" imgSrc="../../assets/people/p1.jpg" class="team-card">
+				<img src=../../assets/people/p1.jpg></img>
+				<div>
+					<h1>Jafet Santos Maldonado</h1>
+					<p>Comunicador Científico e Ilustrador</p>
+				</div>
+			</div>
+			<div @ name="Juan D Matias Mercado" desc="Editor de Video" imgSrc="../../assets/people/p2.jpg" class="team-card">
+				<img src=../../assets/people/p2.jpg></img>
+				<div>
+					<h1>Juan D Matias Mercado</h1>
+					<p>Editor de Video</p>
+				</div>
+			</div>
+			<div @ name="Airinés González Velázquez" desc="Investigadora de Laboratorio" imgSrc="../../assets/people/p3.jpg" class="team-card">
+				<img src=../../assets/people/p3.jpg></img>
+				<div>
+					<h1>Airinés González Velázquez</h1>
+					<p>Investigadora de Laboratorio</p>
+				</div>
+			</div>
+			<div @ name="Louis L Flores Lopez" desc="Horticultura & Diseño Grafico" imgSrc="../../assets/people/p4.jpg" class="team-card">
+				<img src=../../assets/people/p4.jpg></img>
+				<div>
+					<h1>Louis L Flores Lopez</h1>
+					<p>Horticultura & Diseño Grafico</p>
+				</div>
+			</div>
+			<div @ name="Carolina N\Rios Vila" desc="Protección de Cultivos" imgSrc="../../assets/people/p5.jpg" class="team-card">
+				<img src=../../assets/people/p5.jpg></img>
+				<div>
+					<h1>Carolina N<br>Rios Vila</h1>
+					<p>Protección de Cultivos</p>
+				</div>
+			</div>
+			<div @ name="Alejandro R Rodríguez Ramírez" desc="Investigador de Laboratorio" imgSrc="../../assets/people/p6.jpg" class="team-card">
+				<img src=../../assets/people/p6.jpg></img>
+				<div>
+					<h1>Alejandro R Rodríguez Ramírez</h1>
+					<p>Investigador de Laboratorio</p>
+				</div>
+			</div>
+			<div @ name="Abby\Gotay Almonte" desc="Programación y Diseño Web" imgSrc="../../assets/people/p7.jpg" class="team-card">
+				<img src=../../assets/people/p7.jpg></img>
+				<div>
+					<h1>Abby<br>Gotay Almonte</h1>
+					<p>Programación y Diseño Web</p>
+				</div>
+			</div>
+			<div @ name="Carola Ramallo Adames" desc="Coordinadora de Evento & Educadora Agrícola" imgSrc="../../assets/people/p10.jpg" class="team-card">
+				<img src=../../assets/people/p10.jpg></img>
+				<div>
+					<h1>Carola Ramallo Adames</h1>
+					<p>Coordinadora de Evento & Educadora Agrícola</p>
+				</div>
+			</div>
+			<div @ name="Nathalia N Santiago Rivera" desc="Coordinadora de Evento & MD Extensión Agrícola" imgSrc="../../assets/people/p9.jpg" class="team-card">
+				<img src=../../assets/people/p9.jpg></img>
+				<div>
+					<h1>Nathalia N Santiago Rivera</h1>
+					<p>Coordinadora de Evento & MD Extensión Agrícola</p>
+				</div>
+			</div>
+		</section>
+		<section id="footer">
+			<p>
+				© 2025 Urban Grow<br>Propiedad del Recinto Universitario de Mayagüez,<br>Universidad de Puerto Rico.
+			</p>
+			<a href="mailto:urbangrowpr@gmail.com">Contactanos</a>
+			<img></img>
+		</section>
+	</body>
+</html>

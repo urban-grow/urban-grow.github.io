@@ -1,0 +1,25 @@
+
+style(src="./common.css")
+script(async defer src="./common.ts")
+
+// The navbar, which is reused throughout the site
+navbar(@)
+	// a
+	// 	img.logo(src="small_logo.png")
+	a(href="../home/") Inicio
+	a(href="../register/") Registro
+
+// The lead-down is just an arrow that leads the user down!
+lead-down(@)
+	a &#9660;
+	script.
+		const listener = () => {
+			if (document.body.scrollTop > 20) {
+				document.querySelector('.lead-down').style.opacity = '0';
+				document.body.removeEventListener('scroll', listener);
+			}
+		};
+		document.body.addEventListener('scroll', listener);
+
+button(@, role="button")
+	p @{text}

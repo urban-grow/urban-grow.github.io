@@ -1,0 +1,44 @@
+@include ../common/common.spl
+
+html
+	head
+		title Urban Grow - Registro
+		style(src="styles.css")
+
+		script(src="https://www.gstatic.com/firebasejs/10.10.0/firebase-app-compat.js")
+		script(src="https://www.gstatic.com/firebasejs/10.10.0/firebase-firestore-compat.js")
+		script(src="firebase.js" type="module")
+		
+		script(defer src="script.ts")
+
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+	body
+		navbar(@)
+		div#background-image
+		div#alert-box
+			div(style="width:100%") Some message!
+		div#registration-box
+			img(src="../../assets/ColoredLogo.svg")
+			p(style="font-size:1.4em") Feria Huertos Caseros
+			div#exit-dialogue
+				p ¡Gracias por registrarse!
+			form#signup-form
+				div
+					label(for="form-name") Nombre
+					br
+					input#form-name(autocomplete="on" type="text" name="name")
+				div
+					label(for="form-email") Email
+					br
+					input#form-email(autocomplete="on" type="text" name="email")
+				div
+					label(for="form-phone") Telefono
+					br
+					input#form-phone(autocomplete="on" type="tel" name="phone")
+				div
+					label(for="form-participants") Numero de Participantes
+					br
+					input#form-participants(autocomplete="on" type="number" name="participants" min=1 max=10)
+			button(@, text="Registrar")
+		p.
+			For special inquiries please contact us at (urbangrowpr@gmail.com)[mailto:urbangrowpr@gmail.com]

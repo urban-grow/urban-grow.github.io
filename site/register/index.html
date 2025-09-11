@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<script async defer src="./../common/common.js"></script>
+<html>
+	<head>
+		<script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-app-compat.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-firestore-compat.js"></script>
+		<script src="firebase.js" type="module"></script>
+		<script defer src="script.js"></script>
+		<link rel="stylesheet" href="./../common/common.css"></link>
+		<title>Urban Grow - Registro</title>
+		<link rel="stylesheet" href="styles.css"></link>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0"></meta>
+	</head>
+	<body>
+		<div @ class="navbar">
+			<a href="./../home">Inicio</a>
+			<a href="./../register">Registro</a>
+		</div>
+		<div id="background-image"></div>
+		<div id="alert-box">
+			<div style="width:100%">Some message!</div>
+		</div>
+		<div id="registration-box">
+			<img src="../../assets/ColoredLogo.svg"></img>
+			<p style="font-size:1.4em">Feria Huertos Caseros</p>
+			<div id="exit-dialogue">
+				<p>¡Gracias por registrarse!</p>
+			</div>
+			<form id="signup-form">
+				<div>
+					<label for="form-name">Nombre</label>
+					<br>
+					<input autocomplete="on" type="text" name="name" id="form-name"></input>
+				</div>
+				<div>
+					<label for="form-email">Email</label>
+					<br>
+					<input autocomplete="on" type="text" name="email" id="form-email"></input>
+				</div>
+				<div>
+					<label for="form-phone">Telefono</label>
+					<br>
+					<input autocomplete="on" type="tel" name="phone" id="form-phone"></input>
+				</div>
+				<div>
+					<label for="form-participants">Numero de Participantes</label>
+					<br>
+					<input autocomplete="on" type="number" name="participants" min=1 max=10 id="form-participants"></input>
+				</div>
+			</form>
+			<div role="button" @ text="Registrar" class="button">
+				<p>Registrar</p>
+			</div>
+		</div>
+		<p>
+						For special inquiries please contact us at (urbangrowpr@gmail.com)[mailto:urbangrowpr@gmail.com
+		</p>
+	</body>
+</html>

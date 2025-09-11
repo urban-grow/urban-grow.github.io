@@ -1,0 +1,76 @@
+@include ../common/common.spl
+
+head
+	title Urban Grow
+	style(src="./styles.css")
+
+	// Pre-load sub-pages
+	link(rel="prefetch", href="../register/", as="document")
+
+	script(async defer src="./script.ts")
+	meta(charset="UTF-8")
+
+body
+	navbar(@)
+	lead-down(@)
+	
+	div#title
+		div.parallax.title-bg-image
+		section#title-content
+			// h1 Urban Grow
+			img#hero-logo(src="../../assets/ColoredLogo.svg")
+			h2 No solo esperes un futuro seguro.<br>Cultívalo.
+
+	section#project
+		h1 ¿Quiénes somos?
+		p Urban Grow es un proyecto enfocado en promover la agricultura familiar.  Estamos comprometidos con fomentar la seguridad alimentaria en Puerto Rico por medio de la educación. Así exhortamos la comida fresca, segura y sostenible.
+
+		div#highlights
+			div
+				h3 Comida para Todos
+				p Ayudamos a las familias a crear y cuidar huertos urbanos, sin importar la experiencia. 
+			div
+				h3 Cultiva Seguridad
+				p Enseñamos a cultivar con seguridad, cuidando tu salud y suelo.
+			div
+				h3 Eco-Solución
+				p Promovemos prácticas sostenibles para reducir el impacto ambiental.
+			div
+				h3 Cultiva Comunidad
+				p Más que huertos y jardines, construimos comunidad. ¡Comparte y crece con otros!
+
+
+	section.parallax#register
+		div
+			h1(style="margin-top: 0;") ¿Listo para cosechar alegría, resiliencia y tus propios tomates?
+			p.
+				Asegura tu lugar en nuestro próximo taller y recibe la guía de jardinería familiar que todo hogar puertorriqueño necesita.
+			button(@, text="¡Registrate!", onclick="gotoRegister()")
+
+	section#objectives
+		h1 ¡Tu Huerto Comienza Aquí!
+		p.
+			La resiliencia de Puerto Rico se cultiva en comunidad. ¿Listo para poner las manos en la tierra y ser parte del cambio?
+
+	section.parallax#team
+		team-card(@)
+			img(src=@{imgSrc} )
+			div
+				h1 @{name}
+				p @{desc}
+		team-card(@, name="Dr. Daniel A Bair", desc="Especialista en Suelos y Director del Proyecto", imgSrc="../../assets/people/bair.jpg")
+		team-card(@, name="Jafet Santos Maldonado", desc="Comunicador Científico e Ilustrador", imgSrc="../../assets/people/p1.jpg")
+		team-card(@, name="Juan D Matias Mercado", desc="Editor de Video", imgSrc="../../assets/people/p2.jpg")
+		team-card(@, name="Airinés González Velázquez", desc="Investigadora de Laboratorio", imgSrc="../../assets/people/p3.jpg")
+		team-card(@, name="Louis L Flores Lopez", desc="Horticultura & Diseño Grafico", imgSrc="../../assets/people/p4.jpg")
+		team-card(@, name="Carolina N\Rios Vila", desc="Protección de Cultivos", imgSrc="../../assets/people/p5.jpg")
+		team-card(@, name="Alejandro R Rodríguez Ramírez", desc="Investigador de Laboratorio", imgSrc="../../assets/people/p6.jpg")
+		team-card(@, name="Abby\Gotay Almonte", desc="Programación y Diseño Web", imgSrc="../../assets/people/p7.jpg")
+		// team-card(@, name="Fabian A Acevedo Martinez", desc="Programación y Diseño Web", imgSrc="../../assets/people/p8.jpg")
+		team-card(@, name="Carola Ramallo Adames", desc="Coordinadora de Evento & Educadora Agrícola", imgSrc="../../assets/people/p10.jpg")
+		team-card(@, name="Nathalia N Santiago Rivera", desc="Coordinadora de Evento & MD Extensión Agrícola", imgSrc="../../assets/people/p9.jpg")
+
+	section#footer
+		p © 2025 Urban Grow\Propiedad del Recinto Universitario de Mayagüez,\Universidad de Puerto Rico.
+		a(href="mailto:urbangrowpr@gmail.com") Contactanos
+		img

@@ -1,0 +1,121 @@
+
+:root {
+	--contentWidth: 800px;
+	--sideSpace: calc(50vw - var(--contentWidth) / 2);
+	--sideSpaceMin: 20px;
+	--highlight-color: #63a51c;
+	--button-transition-time: 0.5s;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	overflow: clip scroll;
+	width: 100vw;
+	height: 100vh;
+	font-size: 1.1em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAVBAR */
+
+.navbar {
+	padding-left: var(--sideSpace);
+	padding-right: var(--sideSpace);
+	width: 100vw;
+	height: 5vh;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	background-color: #00000015;
+	backdrop-filter: blur(10px) saturate(1.1);
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+}
+
+.navbar .logo {
+	height: 100%;
+}
+
+.navbar > a {
+	padding: 10px 20px 10px 20px;
+	float: left;
+	text-decoration: none;
+	color: white;
+	text-shadow: 0 2px 10px #0008;
+	height: 100%;
+	box-sizing: border-box;
+	align-content: center;
+}
+
+.navbar > a:hover {
+	background-color: #0002;
+}
+
+/* LEAD-DOWN */
+
+.lead-down {
+	width: 100vw;
+	height: 10vh;
+	position: absolute;
+	z-index: 999;
+	align-content: center;
+	text-align: center;
+	font-size: 50px;
+	color: #f7f7f7;
+	bottom: 0;
+	text-shadow: 0 1px 4px #1118;
+	opacity: 0.5;
+	user-select: none;
+	pointer-events: none;
+	transition: opacity .15s ease-in;
+}
+
+/* DEFAULT SECTION */
+
+section {
+	padding-left: max(var(--sideSpaceMin), var(--sideSpace));
+	padding-right: max(var(--sideSpaceMin), var(--sideSpace));
+	padding-top: 25px;
+	padding-bottom: 25px;
+	overflow: clip;
+}
+
+/* BUTTON */
+
+.button {
+	user-select: none;
+	-webkit-user-select: none;
+	background-color: var(--highlight-color);
+	border: 2px solid #fff2;
+	color: white;
+	border-radius: 4px;
+	padding: 10px 22px 10px 22px;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+	position: relative;
+}
+.button:hover {
+	background-color: #88CA41;
+}
+.button:active {
+	background-color: #5d9d1a;
+}
+
+.button > p {
+	user-select: none;
+	margin: 0;
+	padding: 0;
+	opacity: 1.0;
+	font-size: 1.2em;
+	transition: var(--button-transition-time) opacity var(--custom-ease);
+}
+.button > p.transitioning {
+	opacity: 0;
+}
