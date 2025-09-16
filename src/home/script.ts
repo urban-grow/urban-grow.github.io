@@ -80,28 +80,36 @@ async function initializeComplexTeam() {
 	});
 
 	const touches: Record<number, [ number, number ]> = {};
-	teamSection.addEventListener('touchstart', e => {
-		for (const touch of e.changedTouches) {
-			touches[touch.identifier] = [ touch.clientX, 0 ];
-		}
+	teamSection.addEventListener('pointerdown', (e: PointerEvent) => {
+		// for (const touch of e.changedTouches) {
+		// 	touches[touch.identifier] = [ touch.clientX, 0 ];
+		// }
+		touches[0] = [ e.clientX, 0 ];
 	});
-	teamSection.addEventListener('touchend'  , e => {
-		for (const touch of e.changedTouches) {
-			teamScrollExtraInertia -= touches[touch.identifier][1];
-			delete touches[touch.identifier];
-		}
+	teamSection.addEventListener('pointerup'  , (e: PointerEvent) => {
+		// for (const touch of e.changedTouches) {
+		// 	teamScrollExtraInertia -= touches[touch.identifier][1];
+		// 	delete touches[touch.identifier];
+		// }
+		teamScrollExtraInertia -= touches[0][1];
+		delete touches[0];
 	});
-	teamSection.addEventListener('touchmove', e => {
+	teamSection.addEventListener('pointermove', (e: PointerEvent) => {
 		e.preventDefault();
-		for (const touch of e.changedTouches) {
-			const newX = touch.clientX;
-			const lastX = touches[touch.identifier][0];
-			const deltaX = (lastX - newX) * 2;
-			touches[touch.identifier][0] = newX;
-			touches[touch.identifier][1] = deltaX;
-
-			scrollTeamBy(-deltaX);
-		}
+		// for (const touch of e.changedTouches) {
+		// 	const newX = touch.clientX;
+		// 	const lastX = touches[touch.identifier][0];
+		// 	const deltaX = (lastX - newX) * 2;
+		// 	touches[touch.identifier][0] = newX;
+		// 	touches[touch.identifier][1] = deltaX;
+		// 	scrollTeamBy(-deltaX);
+		// }
+		const newX = e.clientX;
+		const lastX = touches[0][0];
+		const deltaX = (lastX - newX) * 2;
+		touches[0][0] = newX;
+		touches[0][1] = deltaX;
+		scrollTeamBy(-deltaX);
 	});
 
 	teamSection.style.perspective = '800px';
@@ -109,7 +117,7 @@ async function initializeComplexTeam() {
 	let lastFrameTime = Date.now();
 	let smoothDelta = 1;
 	const onAnimationFrame = () => {
-		const wheelRadius = 500; //Math.min(Math.max(350, window.innerWidth * 0.29412 + 153), 500);
+		const wheelRadius = 600; //Math.min(Math.max(350, window.innerWidth * 0.29412 + 153), 500);
 		// console.log(wheelRadius);
 
 		const now = Date.now();

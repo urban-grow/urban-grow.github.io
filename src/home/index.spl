@@ -39,15 +39,18 @@ body
 				h3 Cultiva Comunidad
 				p Más que huertos y jardines, construimos comunidad. ¡Comparte y crece con otros!
 
-
 	section.parallax#register
 		div
-			h1(style="margin-top: 0;") ¿Listo para cosechar alegría, resiliencia y tus propios tomates?
+			h1(style="margin-top: 0;") ¿Listo para cosechar tus propios tomates?
 			p.
-				Asegura tu lugar en nuestro próximo taller y recibe la guía de jardinería familiar que todo hogar puertorriqueño necesita.
+				Recibe la guía de jardinería familiar que todo hogar puertorriqueño necesita.
+			p.
+				¡Asegura tu lugar!
 			button(@, text="¡Regístrate!", onclick="gotoRegister()")
+	
+	// section#booklets
 
-	section#objectives
+	section#final-call
 		h1 ¡Tu Huerto Comienza Aquí!
 		p.
 			La resiliencia de Puerto Rico se cultiva en comunidad. ¿Listo para poner las manos en la tierra y ser parte del cambio?
