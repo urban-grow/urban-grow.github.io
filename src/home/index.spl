@@ -45,7 +45,7 @@ body
 			h1(style="margin-top: 0;") ¿Listo para cosechar alegría, resiliencia y tus propios tomates?
 			p.
 				Asegura tu lugar en nuestro próximo taller y recibe la guía de jardinería familiar que todo hogar puertorriqueño necesita.
-			button(@, text="¡Registrate!", onclick="gotoRegister()")
+			button(@, text="¡Regístrate!", onclick="gotoRegister()")
 
 	section#objectives
 		h1 ¡Tu Huerto Comienza Aquí!
@@ -59,6 +59,7 @@ body
 				h1 @{name}
 				p @{desc}
 		team-card(@, name="Dr. Daniel A Bair", desc="Especialista en Suelos y Director del Proyecto", imgSrc="../../assets/people/bair.jpg")
+		team-card(@, name="Miguel A Muñoz", desc="Investigador Codirector", imgSrc="../../assets/people/munoz.jpg")
 		team-card(@, name="Jafet Santos Maldonado", desc="Comunicador Científico e Ilustrador", imgSrc="../../assets/people/p1.jpg")
 		team-card(@, name="Juan D Matias Mercado", desc="Editor de Video", imgSrc="../../assets/people/p2.jpg")
 		team-card(@, name="Airinés González Velázquez", desc="Investigadora de Laboratorio", imgSrc="../../assets/people/p3.jpg")
@@ -66,11 +67,11 @@ body
 		team-card(@, name="Carolina N\Rios Vila", desc="Protección de Cultivos", imgSrc="../../assets/people/p5.jpg")
 		team-card(@, name="Alejandro R Rodríguez Ramírez", desc="Investigador de Laboratorio", imgSrc="../../assets/people/p6.jpg")
 		team-card(@, name="Abby\Gotay Almonte", desc="Programación y Diseño Web", imgSrc="../../assets/people/p7.jpg")
-		// team-card(@, name="Fabian A Acevedo Martinez", desc="Programación y Diseño Web", imgSrc="../../assets/people/p8.jpg")
+		team-card(@, name="Fabian A Acevedo Martinez", desc="Programación y Diseño Web", imgSrc="../../assets/people/p8.jpg")
 		team-card(@, name="Carola Ramallo Adames", desc="Coordinadora de Evento & Educadora Agrícola", imgSrc="../../assets/people/p10.jpg")
 		team-card(@, name="Nathalia N Santiago Rivera", desc="Coordinadora de Evento & MD Extensión Agrícola", imgSrc="../../assets/people/p9.jpg")
 
 	section#footer
 		p © 2025 Urban Grow\Propiedad del Recinto Universitario de Mayagüez,\Universidad de Puerto Rico.
-		a(href="mailto:urbangrowpr@gmail.com") Contactanos
+		a(href="mailto:urbangrowpr@gmail.com") Contáctanos
 		img

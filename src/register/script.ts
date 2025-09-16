@@ -100,7 +100,7 @@ button.addEventListener('pointerdown', () => {
 		state = 'after';
 
 		// Submit!
-		// (window as any).submitData();
+		(window as any).submitData();
 
 		// Fade out form
 		[...form.children].map(d => d.classList.remove('shown'));
