@@ -18,7 +18,8 @@ body
 		div.parallax.title-bg-image
 		section#title-content
 			// h1 Urban Grow
-			img#hero-logo(src="../../assets/ColoredLogo.svg")
+			img#hero-logo-svg(src="../../assets/ColoredLogo.svg")
+			img#hero-logo-mobile(src="../../assets/ColoredLogo.png")
 			h2 No solo esperes un futuro seguro.<br>Cultívalo.
 
 	section#project

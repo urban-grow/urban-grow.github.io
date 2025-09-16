@@ -34,6 +34,16 @@
 	width: 100%;
 	filter: drop-shadow(2px 4px 6px #000d);
 }
+
+@media only screen and (max-width: 649px) {
+	#hero-logo-svg { display: none; }
+	#hero-logo-mobile { display: unset; }
+}
+@media only screen and (min-width: 650px) {
+	#hero-logo-svg { display: unset; }
+	#hero-logo-mobile { display: none; }
+}
+
 @media only screen and (max-width: 650px) {
 	#title-content > h2 {
 		font-size: 3em;
