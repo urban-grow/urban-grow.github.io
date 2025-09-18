@@ -63,7 +63,7 @@ body
 				h1 @{name}
 				p @{desc}
 		team-card(@, name="Dr. Daniel A Bair", desc="Especialista en Suelos y Director del Proyecto", imgSrc="../../assets/people/bair.jpg")
-		team-card(@, name="Miguel A Muñoz", desc="Investigador Codirector", imgSrc="../../assets/people/munoz.jpg")
+		team-card(@, name="Dr. Miguel A Muñoz", desc="Investigador Codirector", imgSrc="../../assets/people/munoz.jpg")
 		team-card(@, name="Jafet Santos Maldonado", desc="Comunicador Científico e Ilustrador", imgSrc="../../assets/people/p1.jpg")
 		team-card(@, name="Juan D Matias Mercado", desc="Editor de Video", imgSrc="../../assets/people/p2.jpg")
 		team-card(@, name="Airinés González Velázquez", desc="Investigadora de Laboratorio", imgSrc="../../assets/people/p3.jpg")
