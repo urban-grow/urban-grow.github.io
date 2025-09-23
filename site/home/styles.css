@@ -163,7 +163,7 @@ section *::selection {
 	text-align: center;
 
 	width: 256px;
-	height: 390px;
+	height: fit-content;
 	position: absolute;
 
 	transform: translate(-50%, -50%) scale(0.5);

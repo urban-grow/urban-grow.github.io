@@ -74,6 +74,7 @@ body
 		team-card(@, name="Fabian A Acevedo Martinez", desc="Programación y Diseño Web", imgSrc="../../assets/people/p8.jpg")
 		team-card(@, name="Carola Ramallo Adames", desc="Coordinadora de Evento & Educadora Agrícola", imgSrc="../../assets/people/p10.jpg")
 		team-card(@, name="Nathalia N Santiago Rivera", desc="Coordinadora de Evento & MD Extensión Agrícola", imgSrc="../../assets/people/p9.jpg")
+		team-card(@, name="Dr. Inna E. Popova", desc="Química de Suelos, Toxicología Ambiental y Contaminantes", imgSrc="../../assets/people/popova.jpg")
 
 	section#footer
 		p © 2025 Urban Grow\Propiedad del Recinto Universitario de Mayagüez,\Universidad de Puerto Rico.

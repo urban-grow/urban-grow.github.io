@@ -117,7 +117,7 @@ async function initializeComplexTeam() {
 	let lastFrameTime = Date.now();
 	let smoothDelta = 1;
 	const onAnimationFrame = () => {
-		const wheelRadius = 600; //Math.min(Math.max(350, window.innerWidth * 0.29412 + 153), 500);
+		const wheelRadius = 700; //Math.min(Math.max(350, window.innerWidth * 0.29412 + 153), 500);
 		// console.log(wheelRadius);
 
 		const now = Date.now();
@@ -140,7 +140,7 @@ async function initializeComplexTeam() {
 			let y = (Math.cos(teamScrollAnim + elIdx * spacing) + 1) * 0.5;
 
 			el.style.left = (50 + x) + '%';
-			el.style.transform = `translate(-50%, -50%) scale(${y}) rotate3d(0, 1, 0, ${x * 0.9}deg)`;
+			el.style.transform = `translate(-50%, -50%) scale(${y}) rotate3d(0, 1, 0, ${x * 0.0007 * teamSection.clientWidth}deg)`;
 			el.style.zIndex = Math.round(y * 100) + '';
 
 			y *= 1.3;
