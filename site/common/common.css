@@ -5,6 +5,7 @@
 	--sideSpaceMin: 20px;
 	--highlight-color: #63a51c;
 	--button-transition-time: 0.5s;
+	--navbarSize: 5vh
 }
 
 html, body {
@@ -23,7 +24,7 @@ html, body {
 	padding-left: var(--sideSpace);
 	padding-right: var(--sideSpace);
 	width: 100vw;
-	height: 5vh;
+	height: var(--navbarSize);
 
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;

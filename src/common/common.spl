@@ -8,6 +8,7 @@ navbar(@)
 	// 	img.logo(src="small_logo.png")
 	a(href="../home/") Inicio
 	a(href="../register/") Registro
+	a(href="../activities/") Actividades
 
 // The lead-down is just an arrow that leads the user down!
 lead-down(@)

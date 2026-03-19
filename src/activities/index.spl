@@ -1,0 +1,81 @@
+@include ../common/common.spl
+
+html
+	head
+		title Urban Grow - Registro
+		style(src="styles.css")
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+	body
+		navbar(@)
+		div
+			div.img-header(style="margin-top:0")
+				img(src="../../assets/people/team.jpg")
+
+			div.act-section
+				p La Feria de Huertos tiene como objetivo enseñar a los niños y a las familias cómo crear sus propios huertos caseros o comunitarios. Para lograrlo, organizamos una serie de mesas con actividades educativas y dinámicas, en las que las familias con niños irán pasando por las diferentes mesas.
+
+			div.img-header
+				img(src="../../assets/activities/entomology.jpg")
+				h2 Entomología
+			div.act-section
+				p La entomología es el estudio científico de los insectos y su relación con el medio ambiente.
+				p Hay insectos beneficiosos igual que insectos dañinos. Los insectos beneficiosos polinizan las flores y cultivos, ayudando al crecimiento de los alimentos que comemos. Mientras que los insectos dañinos transmiten enfermedades que afectan los cultivos.
+
+				p Algunos ejemplos de insectos beneficiosos son:
+				ul
+					li 🐝 Abejas
+					li 🦋 Mariposas
+
+				p Algunos ejemplos de insectos no beneficiosos son:
+				ul
+					li 🪰 Mosca blanca
+					li 🐛 Áfidos
+
+			div.img-header
+				img(src="../../assets/activities/horticultura.jpg")
+				h2 Horticultura
+			div.act-section
+				p La horticultura es la ciencia y el arte de cultivar plantas. Nos enseña cómo cuidar las plantas para que crezcan sanas y fuertes. Las personas que estudian horticultura aprenden sobre la tierra, el agua, la luz del sol y cómo proteger las plantas de los insectos y las enfermedades. La horticultura nos ayuda a tener frutas deliciosas y flores hermosas.
+
+				p Algunos ejemplos de cultivos hortícolas son:
+				ul
+					li 🍅 Tomates
+					li 🥬 Lechuga
+					li 🌶️ Pimientos
+
+			div.img-header
+				img(src="../../assets/activities/soils.jpg")
+				h2 Suelos
+			div.act-section
+				p El suelo es la capa de la Tierra donde crecen las plantas. Está formado por pequeñas partes de rocas, hojas, animales, agua y aire. Un buen suelo le da a las plantas los nutrientes que necesitan para crecer fuerte. ¡Cuidar el suelo es muy importante, porque sin él no podríamos tener árboles, flores, ni alimentos! 🌱🌎
+
+				p Algunos ejemplos de características de suelo son:
+				ul
+					li 🍁Fertilidad 
+					li 🪱Textura 
+					li 🎨Color 
+
+			div.img-header
+				img(src="../../assets/activities/nutrients.jpg")
+				h2 Nutrientes
+			div.act-section
+				p Los nutrientes son como vitaminas para las plantas: les ayudan a crecer fuertes y saludables. Si a una planta le faltan nutrientes, puede crecer pequeña, tener hojas amarillas o dar menos frutas y verduras.
+
+				p Algunos ejemplos de los nutrientes más importantes para la planta son:
+				ul
+					li 🌿 Nitrógeno
+					li 🪨 Fósforo
+					li ⚡ Potasio
+
+			div.img-header
+				img(src="../../assets/activities/seguridad.jpg")
+				h2 Seguridad Alimentaria
+			div.act-section
+				p La seguridad alimentaria significa que todas las personas tienen comida suficiente, saludable y segura para comer todos los días. Cuando cuidamos nuestros cultivos, protegemos el suelo y compartimos los alimentos, ayudamos a que nadie pase hambre.
+
+				p Algunos ejemplos de los cultivos más importantes en Puerto Rico son:
+				ul
+					li 🍌Plátanos
+					li 🥔Name
+					li 🥭Mangoes
